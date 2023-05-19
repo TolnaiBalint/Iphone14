@@ -161,31 +161,15 @@ h3 {
 }
 
 @keyframes rotate {
-    0% {
-        transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)
-    }
-
-    20% {
-        transform: perspective(350px) translateZ(-327px) rotateY(25deg) scale(2)
-    }
-
-    100% {
-        transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)
-    }
+    0% {transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)}
+    20% {transform: perspective(350px) translateZ(-327px) rotateY(25deg) scale(2)}
+    100% {transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)}
 }
 
 @keyframes rotateReverse {
-    0% {
-        transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)
-    }
-
-    20% {
-        transform: perspective(350px) translateZ(-327px) rotateY(-25deg) scale(2)
-    }
-
-    100% {
-        transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)
-    }
+    0% {transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)}
+    20% {transform: perspective(350px) translateZ(-327px) rotateY(-25deg) scale(2)}
+    100% {transform: perspective(350px) translateZ(0px) rotateY(0deg) scale(1)}
 }
 
 #controller {
@@ -325,13 +309,17 @@ h3 {
 \*------------------------------------*/
 .shield {
     position: relative;
-    height: 350px;
+    height: 420px;
+    background: var(--background); 
+}
+
+.shield__txt {
     padding: 15px;
-    background: var(--background);
 }
 
 .lockscreen__slide {
     width: 250px;
+    bottom: 0;
 }
 
 
@@ -390,13 +378,14 @@ h3 {
     /* shield */
     .shield {
         
-        height: 540px;
+        height: 600px;
         padding: 15px;
     }
     
     .lockscreen__slide {
         width: 400px;
     }
+
 }
 
 
@@ -462,7 +451,7 @@ h3 {
 
     /* SHIELD */
     .shield { 
-        height: 570px;
+        height: 600px;
         grid-area: shield;
         overflow: hidden;
         border-radius: var(--borderradius);
